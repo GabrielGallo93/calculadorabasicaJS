@@ -20,10 +20,12 @@ switch(operacion) {
         alert("El resultado es " + (resultado));
         break;
     case '/':
+        if(numero2 !=0){
         resultado = (numero1 / numero2);
         alert("El resultado es " + (resultado));
-        break;
-
+        }else{
+            alert("No es posible dividir por cero")
+        }
     default:
-        alert("valor incorrecto")
+        alert("Operación invalida")
 }
